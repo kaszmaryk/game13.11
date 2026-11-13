@@ -1,25 +1,4 @@
-import {
-  StethoscopeIcon,
-  Building2Icon,
-  UsersIcon,
-  TrendingDownIcon,
-  CalendarIcon,
-  VoteIcon,
-  LandmarkIcon,
-  ScaleIcon,
-  BriefcaseIcon,
-  ShieldAlertIcon,
-  GavelIcon,
-  WalletIcon,
-  ActivityIcon,
-  TrophyIcon,
-  MegaphoneIcon,
-  GraduationCapIcon,
-  HeartPulseIcon,
-  FileTextIcon,
-  ArrowRightLeftIcon,
-  ClockIcon,
-} from 'lucide-react';
+import { ActivityIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface SlideIllustrationProps {
