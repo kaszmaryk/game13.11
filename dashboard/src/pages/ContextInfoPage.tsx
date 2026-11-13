@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { InfoIcon } from 'lucide-react';
+import { InfoIcon, QrCodeIcon } from 'lucide-react';
+import { QRCodeSVG } from 'qrcode.react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -66,13 +67,14 @@ export function ContextInfoPage() {
 
       {/* Tabs for different sections */}
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 group-data-horizontal/tabs:h-auto p-1">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-7 group-data-horizontal/tabs:h-auto p-1">
           <TabsTrigger value="briefing" className="text-xs md:text-sm">Брифинг</TabsTrigger>
           <TabsTrigger value="description" className="text-xs md:text-sm">Описание</TabsTrigger>
           <TabsTrigger value="organs" className="text-xs md:text-sm">Органы</TabsTrigger>
           <TabsTrigger value="numbers" className="text-xs md:text-sm">Ключевые числа</TabsTrigger>
           <TabsTrigger value="glossary" className="text-xs md:text-sm">Глоссарий</TabsTrigger>
           <TabsTrigger value="faq" className="text-xs md:text-sm">FAQ</TabsTrigger>
+          <TabsTrigger value="qrcode" className="text-xs md:text-sm">QR-код</TabsTrigger>
         </TabsList>
 
         {/* Briefing Slides Tab */}
@@ -421,6 +423,35 @@ export function ContextInfoPage() {
               ) : (
                 <p className="text-muted-foreground">FAQ не загружен</p>
               )}
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        {/* QR Code Tab */}
+        <TabsContent value="qrcode" className="mt-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <QrCodeIcon data-icon="inline-start" />
+                QR-код дашборда
+              </CardTitle>
+              <CardDescription>Отсканируйте, чтобы открыть дашборд на телефоне</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center gap-4 py-8">
+              <div className="rounded-xl border-2 border-border bg-white p-4">
+                <QRCodeSVG
+                  value={typeof window !== 'undefined' ? window.location.href : 'https://kaszmaryk.github.io/game13.11/'}
+                  size={256}
+                  level="M"
+                  includeMargin={false}
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center max-w-md">
+                Наведите камеру телефона на QR-код, чтобы открыть дашборд в мобильном браузере
+              </p>
+              <p className="text-xs font-mono text-muted-foreground break-all text-center">
+                {typeof window !== 'undefined' ? window.location.origin + window.location.pathname : 'https://kaszmaryk.github.io/game13.11/'}
+              </p>
             </CardContent>
           </Card>
         </TabsContent>
