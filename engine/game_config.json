@@ -1,0 +1,275 @@
+{
+  "game": {
+    "title": "Врачи против правительства: Англия, май 2026",
+    "subtitle": "Деловая игра о забастовке, оферте и референдуме резидент-врачей NHS",
+    "version": "1.0.0",
+    "startDate": "2026-05-27",
+    "endDate": "2026-07-05",
+    "totalTurns": 5,
+    "daysPerTurn": 8,
+    "language": "ru"
+  },
+  "playableOrgans": [
+    {
+      "id": "rdc",
+      "name": "RDC — Забастовочный комитет резидент-врачей",
+      "abbrev": "RDC",
+      "leader": "Доктор Джек Флетчер",
+      "description": "Комитет BMA, который объявляет забастовки, ведёт переговоры и рекомендует референдуму принять или отклонить оферту",
+      "color": "#E30613",
+      "goals": [
+        {
+          "goal": "Сделка принята базой с pay+jobs",
+          "weight": 50,
+          "type": "главная"
+        },
+        {
+          "goal": "Не ниже DDRB / не «sellout»",
+          "weight": 20,
+          "type": "защитная"
+        },
+        {
+          "goal": "Места и сборы реально внедрены",
+          "weight": 20,
+          "type": "программная"
+        },
+        {
+          "goal": "Сохранить мандат и единство",
+          "weight": 10,
+          "type": "защитная"
+        }
+      ],
+      "redLines": [
+        "Не рекомендовать оферту без конкретных мест и прогресса к pay restoration",
+        "Не продавать базу за туманные обещания"
+      ]
+    },
+    {
+      "id": "bma_council",
+      "name": "BMA UK Committee + Council",
+      "abbrev": "BMA",
+      "leader": "Руководство союза",
+      "description": "Совет союза, где сидят консультанты, SAS, GP, студенческая ветвь; казначей забастовочного фонда",
+      "color": "#C41E3A",
+      "goals": [
+        {
+          "goal": "Единство союза across branches",
+          "weight": 40,
+          "type": "главная"
+        },
+        {
+          "goal": "Платёжеспособность фонда",
+          "weight": 20,
+          "type": "защитная"
+        },
+        {
+          "goal": "Рычаг по консультантам",
+          "weight": 25,
+          "type": "стратегическая"
+        },
+        {
+          "goal": "Репутация",
+          "weight": 15,
+          "type": "защитная"
+        }
+      ],
+      "redLines": [
+        "Не допустить, чтобы сделка резидентов обесценила спор консультантов",
+        "Не разорить фонд"
+      ]
+    },
+    {
+      "id": "dhsc",
+      "name": "DHSC + NHS Employers",
+      "abbrev": "DHSC",
+      "leader": "Джеймс Мюррей",
+      "description": "Переговорная команда правительства: министр здравоохранения + аппарат + переговорщики работодателей",
+      "color": "#2E5C9E",
+      "goals": [
+        {
+          "goal": "Закончить забастовки без слома лимита",
+          "weight": 45,
+          "type": "главная"
+        },
+        {
+          "goal": "DDRB-based deal",
+          "weight": 25,
+          "type": "фискальная"
+        },
+        {
+          "goal": "Восстановление очереди",
+          "weight": 20,
+          "type": "операционная"
+        },
+        {
+          "goal": "Выживание нового министра",
+          "weight": 10,
+          "type": "политическая"
+        }
+      ],
+      "redLines": [
+        "Оферта в силе только при отмене забастовки",
+        "Не выходить за лимит без решения Казначейства"
+      ]
+    },
+    {
+      "id": "hmt",
+      "name": "HMT + Даунинг-стрит",
+      "abbrev": "HMT",
+      "leader": "Канцлер Казначейства + офис премьера",
+      "description": "Фискальный блок: Казначейство держит кошелёк, Даунинг-стрит контролирует политическую стратегию",
+      "color": "#009B3D",
+      "goals": [
+        {
+          "goal": "Удержать лимит",
+          "weight": 50,
+          "type": "главная"
+        },
+        {
+          "goal": "Не допустить заражения консультантов/госсектора",
+          "weight": 30,
+          "type": "защитная"
+        },
+        {
+          "goal": "Авторитет DDRB",
+          "weight": 20,
+          "type": "институциональная"
+        }
+      ],
+      "redLines": [
+        "Не выходить за envelope",
+        "Не давать open-ended pay restoration commitment"
+      ]
+    },
+    {
+      "id": "providers",
+      "name": "NHS Providers",
+      "abbrev": "Providers",
+      "leader": "Совет директоров трастов",
+      "description": "Операционные директора больниц, которые переживают забастовку на земле",
+      "color": "#005EB8",
+      "goals": [
+        {
+          "goal": "Безопасность пациентов / staffing",
+          "weight": 40,
+          "type": "главная"
+        },
+        {
+          "goal": "Восстановление очереди",
+          "weight": 30,
+          "type": "операционная"
+        },
+        {
+          "goal": "Locum-бюджет",
+          "weight": 20,
+          "type": "финансовая"
+        },
+        {
+          "goal": "Удержание LED",
+          "weight": 10,
+          "type": "кадровая"
+        }
+      ],
+      "redLines": [
+        "Не допускать unsafe staffing",
+        "LED-контракты не расторгаются досрочно при конверсии в места"
+      ]
+    },
+    {
+      "id": "aomrc",
+      "name": "AoMRC — Академия королевских медицинских колледжей",
+      "abbrev": "AoMRC",
+      "leader": "Комитет по ординатуре",
+      "description": "Колледжи, которые ставят экзамены и стандарты подготовки; комитет по ординатуре",
+      "color": "#6A0DAD",
+      "goals": [
+        {
+          "goal": "Качество и число мест ординатуры",
+          "weight": 40,
+          "type": "главная"
+        },
+        {
+          "goal": "Снижение экзаменационной нагрузки",
+          "weight": 30,
+          "type": "программная"
+        },
+        {
+          "goal": "Стандарты curriculum",
+          "weight": 30,
+          "type": "профессиональная"
+        }
+      ],
+      "redLines": [
+        "Места без снижения качества подготовки",
+        "Не превращать экзамены в источник дохода"
+      ]
+    }
+  ],
+  "nonPlayableAgents": [
+    {
+      "id": "ddrb",
+      "name": "DDRB — Doctors' and Dentists' Review Body",
+      "role": "Независимый орган, рекомендующий надбавки врачам",
+      "currentRecommendation": 3.5,
+      "effectiveDate": "2026-04-01"
+    },
+    {
+      "id": "bma_members",
+      "name": "Членская база BMA",
+      "role": "Электорат референдума (~54 тыс. избирателей)",
+      "totalEligible": 54400,
+      "voterTurnoutThreshold": 0.5,
+      "approvalThreshold": 0.4
+    },
+    {
+      "id": "media",
+      "name": "Пресса + пациентские организации",
+      "role": "Фрейминг, утечки, накал медийного внимания"
+    }
+  ],
+  "keyNumbers": {
+    "residentDoctorsTotal": 81000,
+    "bmaEligibleVoters": 54400,
+    "mandateValidUntil": "2026-08",
+    "reballotResult": {
+      "yesPercent": 93,
+      "turnout": 52.5
+    },
+    "ddrbRecommendation": 3.5,
+    "marchOffer": {
+      "averageIncrease": 4.9,
+      "fy1Increase": 6.2,
+      "fy2Increase": 7.1,
+      "trainingPlaces": "4000-4500 over 3 years",
+      "acceleratedPlaces": 1000,
+      "acceleratedStatus": "burnt"
+    },
+    "salaries": {
+      "fy1": 38831,
+      "fy2": 44439,
+      "currency": "GBP",
+      "period": "annual, before tax, 2025-26"
+    },
+    "payGapFrom2008": 20,
+    "strikeDates": {
+      "start": "2026-06-15T07:00:00Z",
+      "end": "2026-06-19T06:59:00Z",
+      "durationDays": 4
+    }
+  },
+  "glossary": [
+    {"term": "NHS", "definition": "National Health Service — государственная система здравоохранения Англии"},
+    {"term": "Resident doctor", "definition": "Врач в процессе подготовки (бывший junior doctor): FY1/FY2 + ST"},
+    {"term": "FY1 / FY2", "definition": "Первый/второй год базовой интернатуры"},
+    {"term": "ST1–ST8", "definition": "Ступени ординатуры (Specialty Training)"},
+    {"term": "Consultant", "definition": "Старший врач, финальная ступень карьеры"},
+    {"term": "LED", "definition": "Locally employed doctor — врач вне программы подготовки"},
+    {"term": "BMA", "definition": "British Medical Association — профсоюз врачей"},
+    {"term": "RDC", "definition": "Resident Doctors Committee — забастовочный комитет BMA"},
+    {"term": "DHSC", "definition": "Department of Health and Social Care — министерство здравоохранения"},
+    {"term": "DDRB", "definition": "Doctors' and Dentists' Review Body — независимый орган, рекомендующий надбавки"},
+    {"term": "Pay restoration", "definition": "Восстановление реальной оплаты до уровня 2008 года"},
+    {"term": "Ballot", "definition": "Почтовое голосование за мандат на забастовку"},
+    {"term": "Referendum", "definition": "Голосование членов по оферте (простое большинство)"}
+  ]
+}

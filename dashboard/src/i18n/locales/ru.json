@@ -1,0 +1,84 @@
+{
+  "navigation": {
+    "game": "Игра",
+    "contextInfo": "Контекст",
+    "media": "Медиа",
+    "socialMedia": "Социальные сети"
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "retry": "Повторить попытку",
+    "noData": "Нет данных для отображения"
+  },
+  "game": {
+    "title": "Игровая панель",
+    "currentTurn": "Текущий раунд",
+    "totalTurns": "Всего раундов",
+    "status": "Статус",
+    "period": "Период"
+  },
+  "metrics": {
+    "title": "Ключевые метрики",
+    "strikeDays": "Дни забастовки",
+    "payIncrease": "Средняя надбавка",
+    "trainingPlaces": "Места ординатуры",
+    "examFees": "Экзаменационные сборы",
+    "payRestorationGap": "Разрыв с 2008",
+    "baseUnity": "Единство базы",
+    "publicSupport": "Общественная поддержка",
+    "governmentStability": "Стабильность правительства",
+    "waitingListImpact": "Влияние на очередь",
+    "mandateExpiry": "До истечения мандата",
+    "referendumProjection": "Проекция референдума",
+    "reballotRisk": "Риск re-ballot"
+  },
+  "timeline": {
+    "title": "Хронология раундов",
+    "turn": "Раунд",
+    "completed": "Завершено",
+    "active": "Активный",
+    "upcoming": "Предстоящий"
+  },
+  "decisions": {
+    "title": "История решений",
+    "actor": "Инициатор",
+    "action": "Действие",
+    "impact": "Влияние",
+    "description": "Описание"
+  },
+  "newspapers": {
+    "title": "Газетные статьи",
+    "source": "Источник",
+    "headline": "Заголовок",
+    "summary": "Краткое содержание",
+    "empty": "Пока нет опубликованных статей",
+    "sentiment": {
+      "negative": "Негативный",
+      "neutral": "Нейтральный",
+      "positive": "Позитивный"
+    }
+  },
+  "socialMedia": {
+    "title": "Лента социальных сетей",
+    "likes": "Нравится",
+    "retweets": "Репосты",
+    "hashtags": "Хэштеги"
+  },
+  "contextInfo": {
+    "title": "Информация о контексте",
+    "gameTitle": "Название игры",
+    "startDate": "Дата начала",
+    "organs": "Органы",
+    "organName": "Название органа",
+    "leader": "Лидер",
+    "role": "Роль",
+    "isPlayerOrgan": "Играбельный орган",
+    "goals": "Цели",
+    "redLines": "Красные линии",
+    "levers": "Рычаги",
+    "keyNumbers": "Ключевые числа",
+    "glossary": "Глоссарий",
+    "faq": "Часто задаваемые вопросы"
+  }
+}
