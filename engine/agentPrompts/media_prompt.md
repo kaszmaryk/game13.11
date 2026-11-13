@@ -80,7 +80,7 @@
   ],
   "socialMediaPosts": [
     {
-      "platform": "Twitter" | "Reddit" | "Facebook",
+      "platform": "twitter" | "reddit" | "facebook",
       "author": "<имя автора поста НА РУССКОМ (вымышленный пользователь, врач, пациент, журналист)>",
       "handle": "<никнейм БЕЗ символа @, например dr_sarah_w или nhs_patient_uk>",
       "content": "<текст поста НА РУССКОМ, до 280 символов, позиционирование только через хэштеги>",
@@ -133,7 +133,7 @@
 mkdir -p engine/turnDecisions/turn_<N>/ && python3 engine/tools/create_press_json.py --organ press --turn <N> \
   --headline "<главный заголовок раунда НА РУССКОМ>" \
   --articles '[{"source":"BBC News","headline":"Заголовок на русском","summary":"...","text":"...","sentiment":"neutral"}]' \
-  --social-media-posts '[{"platform":"Twitter","author":"Доктор Анна Смит","handle":"dr_anna_smith","content":"Текст поста #NHS","hashtags":["#NHS"],"likes":1200,"retweets":450,"sentiment":"pro_doctors"}]' \
+  --social-media-posts '[{"platform":"twitter","author":"Доктор Анна Смит","handle":"dr_anna_smith","content":"Текст поста #NHS","hashtags":["#NHS"],"likes":1200,"retweets":450,"sentiment":"pro_doctors"}]' \
   --social-media-buzz '[{"platform":"twitter","trend":"#NHSкризис","sentiment":"pro_doctors","volume":"high"}]' \
   --public-opinion-shift '{"direction":"towards_doctors","magnitude":3,"driver":"Рост очередей"}' \
   --llm-notes "Фрейминг смещается к системному кризису" \
