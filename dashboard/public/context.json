@@ -2,11 +2,11 @@
   "game": {
     "title": "Врачи против правительства: Англия, май 2026",
     "subtitle": "Деловая игра о забастовке, оферте и референдуме резидент-врачей NHS",
-    "currentTurn": 1,
+    "currentTurn": 2,
     "totalTurns": 5,
     "startDate": "2026-05-27",
-    "currentPeriod": "27 мая 2026 — 3 июня 2026",
-    "lastUpdated": "2026-05-27T12:00:00Z",
+    "currentPeriod": "4 июня 2026 — 11 июня 2026",
+    "lastUpdated": "2026-11-13T16:15:08Z",
     "status": "active",
     "playerOrgan": "dhsc",
     "isGameOver": false,
@@ -385,12 +385,12 @@
     "examFeesCompensated": 0,
     "payRestorationGap": 20,
     "baseUnity": 80,
-    "publicSupport": 60,
-    "governmentStability": 75,
-    "waitingListImpact": 30,
+    "publicSupport": 57,
+    "governmentStability": 73,
+    "waitingListImpact": 45,
     "monthsToMandateExpiry": 3,
-    "referendumProjection": 0,
-    "reballotRisk": 0
+    "referendumProjection": 10,
+    "reballotRisk": 2
   },
   "turnCalendar": [
     {
@@ -412,8 +412,9 @@
       "endDate": "2026-06-03",
       "periodRu": "27 мая 2026 — 3 июня 2026",
       "phase": "Ультиматум и подготовка забастовки",
-      "status": "in_progress",
-      "keyEvents": []
+      "status": "completed",
+      "keyEvents": [],
+      "roundSummary": "Все 9 органов приняли решения за Раунд 1. RDC: Pay restoration ≈+20%, 4000–4500 мест за 3 года, компенсация экзаменационных сбо. DHSC: Повышение зарплаты FY1 и FY2 на 3.5%, остальным резидентам на 2.5%. Компенсация ."
     },
     {
       "turn": 2,
@@ -452,9 +453,190 @@
       "keyEvents": []
     }
   ],
-  "decisions": [],
-  "newspapers": [],
-  "socialMedia": [],
+  "decisions": [
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "AoMRC — Академия колледжей",
+      "action": "AoMRC призывает к конструктивному диалогу ради будущего медицины.",
+      "impact": "Быстрое расширение без контроля качества неприемлемо",
+      "description": "Оферта: Экспертная поддержка реформ обучения\nТребование: Сохранение качества подготовки\nДействия: Экспертная оценка предложений по местам ординатуры; Консультации с королевскими колледжами"
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "Членская база BMA",
+      "action": "Настроение базы: determined_but_no_offer. Ключевые вопросы: Pay restoration to 2008 levels, Working conditions and burnout, Exam fee compensation",
+      "impact": "Единство базы: 80%",
+      "description": "Детали решения не указаны"
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "BMA UK Committee",
+      "action": "BMA UK Committee поддерживает право резидент-врачей на забастовку 15–19 июня. Совет призывает DHSC вернуться к переговорам с учётом требований по pay restoration и созданию мест ординатуры. Забастовоч",
+      "impact": "Влияние на конфликт уточняется",
+      "description": "Оферта: Совет поддерживает позицию RDC, но призывает к конструктивным переговорам\nДействия: Экстренное заседание совета для координации позиций всех ветвей; Консультации с лидерами консультантов и GP о солидарных акциях; Мониторинг состояния забастовочного фонда; Публичная поддержка решения RDC о забастовке\nРекомендация: no_recommendation — Совет не даёт рекомендаций по оферте, так как это прерогатива RDC. Совет наблюдает за переговорами и готов поддержать базу в случае необходимости."
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "DDRB",
+      "action": "DDRB рекомендует 3.5% повышения. Баланс между конкурентоспособностью и фискальной ответственностью",
+      "impact": "Влияние на конфликт уточняется",
+      "description": "Детали решения не указаны"
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "DHSC + NHS Employers",
+      "action": "Министерство здравоохранения выражает глубокую озабоченность текущей ситуацией и подтверждает готовность к конструктивному диалогу для поиска взаимоприемлемого решения.",
+      "impact": "Превышение бюджетного лимита без одобрения Казначейства",
+      "description": "Оферта: Повышение зарплаты FY1 и FY2 на 3.5%, остальным резидентам на 2.5%. Компенсация расходов на сдачу экзаменов. Жилищная поддержка (аренда и общежития) для FY1 и FY2.\nТребование: Отмена забастовки 15-19 июня как условие принятия оферты\nДействия: Предложение дифференцированного повышения заработной платы; Подготовка программы жилищной поддержки для молодых врачей"
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "HMT + Даунинг-стрит",
+      "action": "Казначейство рассматривает запрос DHSC в рамках бюджетных ограничений.",
+      "impact": "Превышение бюджетного лимита невозможно",
+      "description": "Оферта: Ограниченное увеличение бюджета при структурных реформах\nТребование: Доказательства долгосрочной экономии\nДействия: Анализ фискального воздействия предложения DHSC; Консультации с министром финансов"
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "NHS Providers",
+      "action": "NHS Providers предупреждает: четырёхдневная забастовка 15–19 июня создаст критическое давление на больницы. Очередь вырастет, locum-расходы увеличатся, безопасность пациентов под угрозой. Призываем DH",
+      "impact": "Не допускать unsafe staffing; LED-контракты не расторгаются досрочно; 45000 отменённых приёмов; locum £12M за 4 дня",
+      "description": "Оферта: Готовность обеспечить безопасное покрытие экстренных служб при derogation\nТребование: Финансирование дополнительных locum-расходов и ускорение сделки\nДействия: Предоставить данные о прогнозируемом ущербе от забастовки (отменённые операции, рост очереди); Давление на DHSC: требуется финансирование для покрытия locum-расходов; Давление на RDC: прекратить забастовку ради безопасности пациентов; Подготовка планов safe staffing на период забастовки; Мониторинг LED-контрактов для предотвращения досрочного расторжения"
+    },
+    {
+      "turn": 1,
+      "date": "2026-06-02T00:00:00Z",
+      "actor": "RDC — Забастовочный комитет",
+      "action": "Мы готовы к переговорам, но мартовская оферта недостаточна для восстановления зарплат. Забастовка 15–19 июня состоится, если правительство не предложит конкретные места и прогресс к pay restoration.",
+      "impact": "Не примем оферту без конкретных мест и прогресса к pay restoration; Забастовка: 4 дн.",
+      "description": "Оферта: Готовы рассмотреть структурную реформу оплаты с нодальными точками\nТребование: Pay restoration ≈+20%, 4000–4500 мест за 3 года, компенсация экзаменационных сборов\nДействия: Публичное заявление о позиции по оферте; Консультации с грейдами (FY, ST, LED) о единстве требований; Подготовка пикетов на 15–19 июня\nРекомендация: no_recommendation — Активной оферты нет; мартовская отклонена базой"
+    }
+  ],
+  "newspapers": [
+    {
+      "id": "article-001",
+      "turn": 1,
+      "source": "BBC News",
+      "headline": "Junior doctors to strike for four days in June over pay dispute",
+      "summary": "The Resident Doctors Committee has confirmed a four-day strike from June 15-19 after rejecting the government March offer. The dispute centers on pay restoration to 2008 levels and creation of 4,000-4,500 new training places.",
+      "text": "Junior doctors in England are set to stage a four-day strike from June 15-19, the Resident Doctors Committee (RDC) has confirmed, marking a significant escalation in the ongoing pay dispute with the government.\n\nThe RDC rejected the government March offer, demanding pay restoration of approximately 20% to bring salaries back to 2008 levels in real terms, along with concrete commitments to create 4,000-4,500 new training places over three years and compensation for exam fees.\n\nDr. Sarah Chen, RDC Chair, said: \"We remain willing to negotiate, but the March offer was insufficient to address the fundamental issues facing junior doctors. Without concrete progress on pay restoration and training place creation, we cannot in good conscience recommend acceptance to our members.\"\n\nThe Department of Health and Social Care (DHSC) has yet to table a new offer, though sources indicate internal discussions are ongoing. HM Treasury has indicated that only £600 million is available for any settlement, conditional on structural reforms.\n\nNHS Providers warned that the four-day strike could result in approximately 45,000 cancelled operations and cost an estimated £12 million in additional locum staffing. Emergency care will be maintained under derogation arrangements.\n\nThe independent Review Body on Doctors and Dentists Remuneration (DDRB) has recommended a 3.5% pay increase, significantly below the RDC demands. The Academy of Medical Royal Colleges has recommended 4,200 new training places with quality safeguards.\n\nThe British Medical Association UK Council has expressed support for the RDC right to strike while calling for constructive negotiations to resume. A re-ballot in March showed 93% of junior doctors supported strike action.",
+      "sentiment": "neutral",
+      "publishedAt": "2026-05-27T08:00:00Z"
+    },
+    {
+      "id": "article-002",
+      "turn": 1,
+      "source": "The Guardian",
+      "headline": "Junior doctors strike: What it means for patients and the NHS",
+      "summary": "Analysis of the upcoming four-day strike reveals deep divisions over pay restoration and training capacity, with patient safety concerns mounting as hospitals prepare contingency plans.",
+      "text": "As junior doctors prepare for their four-day strike from June 15-19, the NHS faces one of its most challenging periods in recent years. The dispute, which has dragged on since the rejection of the government March offer, highlights fundamental tensions between fiscal constraints and workforce sustainability.\n\nThe core issues are clear: junior doctors want pay restored to 2008 levels, representing roughly a 20% increase from current rates. They also demand 4,000-4,500 new training places over three years and compensation for the exam fees they currently bear. The government, constrained by HM Treasury budget limits of £600 million, has struggled to meet these demands while maintaining fiscal discipline.\n\nNHS Providers estimate the four-day strike will result in 45,000 cancelled operations and require £12 million in emergency locum spending. Hospital trusts are implementing contingency plans, including redeploying consultants to emergency departments and activating locum agency contracts.\n\n\"The impact on patients will be significant,\" said one trust chief executive who spoke on condition of anonymity. \"We are doing everything we can to maintain safe staffing levels, but a four-day withdrawal of labour across such a large portion of the medical workforce inevitably creates pressure.\"\n\nThe British Medical Association UK Council has walked a careful line, supporting the RDC right to strike while urging both sides to return to negotiations. The council noted that other branches of the profession, particularly consultants and GPs, are watching closely to see what precedent this dispute might set.\n\nPublic opinion appears divided. Social media analysis shows strong support among younger demographics for the doctors position, while older voters tend to express concern about service disruption. The hashtag #JuniorDoctorsStrike has trended repeatedly in recent weeks.\n\nWith no active offer on the table and the strike date approaching, pressure is mounting on DHSC ministers to produce a proposal that can bridge the gap between the £600 million Treasury ceiling and the RDC demands. The DDRB 3.5% recommendation, while independently derived, falls far short of what junior doctors consider acceptable.\n\nThe next few weeks will be critical. If no deal is reached before June 15, the NHS will face its most significant industrial action since the pandemic-era strikes.",
+      "sentiment": "negative",
+      "publishedAt": "2026-05-27T08:01:00Z"
+    },
+    {
+      "id": "article-003",
+      "turn": 1,
+      "source": "Daily Mail",
+      "headline": "CHAOS LOOMS: 45,000 operations to be CANCELLED as junior doctors go on strike",
+      "summary": "Hospital bosses warn of massive disruption as junior doctors confirm four-day strike in June, with thousands of patients facing cancelled surgeries and extended waiting times.",
+      "text": "Thousands of patients face having vital operations cancelled as junior doctors confirmed they will go on strike for four days in mid-June, hospital chiefs warned today.\n\nNHS Providers revealed that the planned industrial action from June 15-19 could result in a staggering 45,000 cancelled operations and cost taxpayers an extra £12 million in emergency cover.\n\nThe walkout comes after the Resident Doctors Committee rejected the government latest pay offer, demanding a massive 20 per cent pay rise to restore salaries to 2008 levels. Critics say the demands are unrealistic given the current state of public finances.\n\nHM Treasury has made clear that only £600 million is available for any settlement, and even that would come with strings attached requiring structural reforms to how junior doctors are paid and trained.\n\nOne senior hospital manager, speaking anonymously, said: \"This is going to cause absolute chaos. We have patients who have been waiting months, sometimes years, for operations. Now they face further delays through no fault of their own.\"\n\nThe strike will see junior doctors withdraw all labour except for emergency care. Hospitals are scrambling to put contingency plans in place, including hiring expensive locum doctors and redeploying senior consultants to cover gaps.\n\nPatient groups have expressed deep concern about the impact on safety and waiting times. \"Every cancelled operation is a patient left in pain or uncertainty,\" said one campaigner. \"We understand doctors feel undervalued, but patients are suffering too.\"\n\nThe government has yet to table a new offer, though sources suggest internal discussions are ongoing. The independent pay review body has recommended a 3.5 per cent increase, but junior doctors say this fails to address years of real-terms pay erosion.\n\nWith just weeks to go before the strike begins, pressure is intensifying on both sides to find a solution. But with positions seemingly entrenched, many fear the walkout will go ahead as planned.",
+      "sentiment": "negative",
+      "publishedAt": "2026-05-27T08:02:00Z"
+    },
+    {
+      "id": "article-004",
+      "turn": 1,
+      "source": "Financial Times",
+      "headline": "UK Treasury sets £600m ceiling for junior doctors pay deal amid strike threat",
+      "summary": "HM Treasury has indicated limited fiscal space for resolving the junior doctors dispute, conditioning any settlement on structural reforms to NHS pay architecture.",
+      "text": "HM Treasury has signalled that only £600 million is available to resolve the escalating dispute with junior doctors, imposing a significant constraint on the Department of Health and Social Care negotiating position as a four-day strike looms.\n\nThe fiscal ceiling, communicated to DHSC officials in recent weeks, comes with conditions requiring structural reforms to the NHS pay system. Sources familiar with the discussions describe the Treasury position as firm but not immovable, provided any settlement demonstrates long-term fiscal sustainability.\n\n\"The Treasury is looking for evidence of return on investment,\" said one official briefed on the matter. \"Any additional spending on salaries needs to be justified by improved recruitment, retention, and ultimately better patient outcomes.\"\n\nThe junior doctors, represented by the Resident Doctors Committee, are demanding pay restoration of approximately 20 per cent to bring salaries back to 2008 levels in real terms. They also seek commitments to create 4,000-4,500 new training places over three years and compensation for exam fees.\n\nAnalysts note the significant gap between the Treasury ceiling and the RDC demands. At current workforce numbers, a 20 per cent pay increase would substantially exceed £600 million annually, though the RDC argues that improved retention would reduce costly locum spending and vacancy-related expenses.\n\nNHS Providers estimate the upcoming four-day strike from June 15-19 will cost approximately £12 million in emergency locum cover alone, excluding the broader economic impact of 45,000 cancelled operations.\n\nThe Academy of Medical Royal Colleges has recommended 4,200 new training places with quality safeguards, a figure broadly aligned with RDC demands. However, funding such expansion within the Treasury envelope remains unclear.\n\nMarket observers note that prolonged industrial action in the NHS could have knock-on effects on healthcare sector confidence and insurance costs. The dispute also raises questions about the sustainability of the current NHS funding model amid demographic pressures.\n\nWith no active offer on the table and the strike date approaching, the window for negotiation is narrowing. Both sides face pressure to find a creative solution that addresses workforce concerns within fiscal constraints.",
+      "sentiment": "neutral",
+      "publishedAt": "2026-05-27T08:03:00Z"
+    },
+    {
+      "id": "article-005",
+      "turn": 1,
+      "source": "The Telegraph",
+      "headline": "Junior doctors strike: Ministers urged to hold firm on pay demands",
+      "summary": "Conservative MPs and think tanks warn that conceding to junior doctors 20 per cent pay rise demand could set unsustainable precedent for other public sector workers.",
+      "text": "Senior Conservative MPs and policy experts are urging ministers to resist what they characterise as excessive pay demands from junior doctors, warning that any settlement significantly above the independent review body recommendation could trigger copycat claims across the public sector.\n\nThe Resident Doctors Committee is demanding pay restoration of approximately 20 per cent, far exceeding the 3.5 per cent increase recommended by the independent Review Body on Doctors and Dentists Remuneration (DDRB). With HM Treasury indicating only £600 million is available for any settlement, the gap between the two positions appears substantial.\n\n\"We must be guided by independent evidence, not industrial muscle,\" said one senior Tory MP who sits on the health select committee. \"The DDRB recommendation of 3.5 per cent represents a fair balance between recognising doctors contributions and maintaining fiscal responsibility.\"\n\nThink tanks aligned with the government have argued that conceding to the RDC demands could open the door to similar claims from nurses, teachers, and other public sector workers, potentially creating unaffordable wage spirals.\n\nHowever, critics of this position point out that junior doctors salaries have fallen significantly in real terms since 2008, contributing to recruitment and retention crises that cost the NHS billions in locum spending and vacancy-related inefficiencies.\n\nThe British Medical Association UK Council has sought to thread a needle, supporting the RDC right to strike while calling for constructive negotiations. The council noted that other branches of the medical profession are watching the outcome closely.\n\nNHS Providers have warned that the four-day strike from June 15-19 will result in approximately 45,000 cancelled operations and £12 million in additional locum costs. Patient groups have expressed concern about the impact on those awaiting treatment.\n\nThe Department of Health and Social Care has yet to table a new offer, though sources suggest internal discussions are ongoing. The Treasury £600 million ceiling, conditional on structural reforms, represents a significant constraint on negotiating flexibility.\n\nWith the strike date approaching and positions seemingly entrenched, the coming weeks will test whether political pragmatism can overcome ideological rigidity.",
+      "sentiment": "negative",
+      "publishedAt": "2026-05-27T08:04:00Z"
+    }
+  ],
+  "socialMedia": [
+    {
+      "id": "tweet-001",
+      "turn": 1,
+      "author": "Тренд соцсетей",
+      "handle": "twitter_тренды",
+      "avatar": "",
+      "content": "#JuniorDoctorsStrike",
+      "likes": 20000,
+      "retweets": 6666,
+      "timestamp": "2026-05-27T09:00:00Z",
+      "hashtags": [
+        "#JuniorDoctorsStrike"
+      ]
+    },
+    {
+      "id": "tweet-002",
+      "turn": 1,
+      "author": "Тренд соцсетей",
+      "handle": "twitter_тренды",
+      "avatar": "",
+      "content": "#SaveOurNHS",
+      "likes": 20000,
+      "retweets": 6666,
+      "timestamp": "2026-05-27T09:01:00Z",
+      "hashtags": [
+        "#SaveOurNHS"
+      ]
+    },
+    {
+      "id": "tweet-003",
+      "turn": 1,
+      "author": "Тренд соцсетей",
+      "handle": "facebook_тренды",
+      "avatar": "",
+      "content": "Junior Doctors Strike - What You Need to Know",
+      "likes": 5000,
+      "retweets": 1666,
+      "timestamp": "2026-05-27T09:02:00Z",
+      "hashtags": []
+    },
+    {
+      "id": "tweet-004",
+      "turn": 1,
+      "author": "Тренд соцсетей",
+      "handle": "reddit_тренды",
+      "avatar": "",
+      "content": "r/UKPersonalFinance - Junior Doctor Salary Discussion",
+      "likes": 5000,
+      "retweets": 1666,
+      "timestamp": "2026-05-27T09:03:00Z",
+      "hashtags": []
+    },
+    {
+      "id": "tweet-005",
+      "turn": 1,
+      "author": "Тренд соцсетей",
+      "handle": "reddit_тренды",
+      "avatar": "",
+      "content": "r/unitedkingdom - Strike Impact Megathread",
+      "likes": 20000,
+      "retweets": 6666,
+      "timestamp": "2026-05-27T09:04:00Z",
+      "hashtags": []
+    }
+  ],
   "keyNumbers": [
     {
       "label": "Резидент-врачей в Англии",
