@@ -440,7 +440,7 @@ export function ContextInfoPage() {
             <CardContent className="flex flex-col items-center gap-4 py-8">
               <div className="rounded-xl border-2 border-border bg-white p-4">
                 <QRCodeSVG
-                  value={typeof window !== 'undefined' ? window.location.origin + '/' : 'https://kaszmaryk.github.io/game13.11/'}
+                  value={typeof window !== 'undefined' ? window.location.origin + import.meta.env.BASE_URL : 'https://kaszmaryk.github.io/game13.11/'}
                   size={256}
                   level="M"
                   includeMargin={false}
@@ -450,7 +450,7 @@ export function ContextInfoPage() {
                 Наведите камеру телефона на QR-код, чтобы открыть дашборд в мобильном браузере
               </p>
               <p className="text-xs font-mono text-muted-foreground break-all text-center">
-                {typeof window !== 'undefined' ? window.location.origin + '/' : 'https://kaszmaryk.github.io/game13.11/'}
+                {typeof window !== 'undefined' ? window.location.origin + import.meta.env.BASE_URL : 'https://kaszmaryk.github.io/game13.11/'}
               </p>
             </CardContent>
           </Card>
